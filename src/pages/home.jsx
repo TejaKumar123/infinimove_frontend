@@ -5,12 +5,12 @@ import Footer from "../components/major/home/footer"
 
 const home = () => {
 	return (
-		<>
+		<div className="bg-[#0B021C]">
 			<Navbar />
 			<Services />
 			<About />
 			<Footer />
-		</>
+		</div>
 	)
 }
 

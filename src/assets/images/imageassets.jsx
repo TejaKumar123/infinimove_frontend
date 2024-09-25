@@ -8,7 +8,8 @@ import Instagram from "./Instagram.png";
 import Twitter from "./Twitter.png";
 import logo1 from "./logo1.png";
 import notfound from "./notfound.jpg";
+import infinimove_logo from "./infinimove logo.png"
 
-const imageasset = { website1, service1, service2, service3, Linkedin, Facebook, Instagram, Twitter, logo1, notfound };
+const imageasset = { website1, service1, service2, service3, Linkedin, Facebook, Instagram, Twitter, logo1, notfound, infinimove_logo };
 
 export default imageasset;
