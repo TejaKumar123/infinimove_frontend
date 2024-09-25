@@ -12,6 +12,11 @@ export default {
         'footer-linear': 'linear-gradient(to top,#001FFF,#142180,#17226E,#1A225A)'
 
       },
+      fontFamily: {
+        heading: ["heading", "sans-serif"],
+        subheading: ["subheading", "sans-serif"],
+        para: ["para", "sans-serif"],
+      }
     },
   },
   plugins: [],

@@ -2,6 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+/* josefin sans */
+@font-face {
+	font-family: heading;
+	src: url("fonts/heading.ttf");
+}
+
+/* Lato */
+@font-face {
+	font-family: subheading;
+	src: url("fonts/subheading.ttf");
+}
+
+/* Biryani */
+@font-face {
+	font-family: para;
+	src: url("fonts/para.ttf");
+}
+
+
 * {
 	margin: 0px;
 	padding: 0px;

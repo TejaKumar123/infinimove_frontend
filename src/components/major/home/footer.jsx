@@ -73,7 +73,7 @@ const footer = () => {
 							</div>
 							<div className="flex flex-col items-start justify-between gap-[5px]">
 								<textarea
-									className="w-[180px] h-[50px] rounded-[5px] focus:outline-none text-[black] text-center px-[10px] py-[12px]"
+									className="w-[180px] min-h-[50px] max-h-[50px] rounded-[5px] focus:outline-none text-[black] text-center px-[10px] py-[12px]"
 									placeholder="Enter your feedback"
 									name="feedback"
 									value={formik.values.feedback}
