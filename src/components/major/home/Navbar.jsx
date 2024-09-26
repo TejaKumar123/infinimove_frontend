@@ -44,7 +44,7 @@ const navbar = ({ setAboutvisibility }) => {
 				>
 					ABOUT
 				</div>
-				<div className="w-[125px] flex items-center justify-center h-full cursor-pointer font-b"
+				<div className="w-[125px] flex items-center justify-center h-full cursor-pointer font-bold"
 					key={3}
 					onClick={() => {
 						setIndex(3);
