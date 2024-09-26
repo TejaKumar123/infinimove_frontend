@@ -1,7 +1,7 @@
 import imageasset from "../../../assets/images/imageassets"
 import Person from "@mui/icons-material/Home"
 
-const service1 = () => {
+const Service1 = () => {
 	return (
 		<div className="w-[100%] min-h-[550px] flex flex-row items-center justify-center pl-[100px]">
 			<div className="w-[500px] min-h-[100px]">
@@ -14,4 +14,4 @@ const service1 = () => {
 	)
 }
 
-export default service1
+export default Service1;

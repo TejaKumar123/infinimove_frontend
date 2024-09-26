@@ -1,10 +1,10 @@
 import imageasset from "../../../assets/images/imageassets"
 import { useFormik } from "formik"
 import * as Yup from "yup"
-import ErrorAlert from "../../basic/errorAlert"
+import ErrorAlert from "../../basic/ErrorAlert"
 
 
-const footer = () => {
+const Footer = () => {
 
 	const validationSchema = Yup.object({
 		email: Yup.string().email("invalid email").required("email required"),
@@ -113,4 +113,4 @@ const footer = () => {
 	)
 }
 
-export default footer
+export default Footer;

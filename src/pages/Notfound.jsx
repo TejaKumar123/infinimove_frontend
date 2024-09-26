@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import imageasset from "../assets/images/imageassets";
 
-const notfound = () => {
+const Notfound = () => {
 	const navigate = useNavigate();
 	return (
 		<div className="w-screen h-screen p-[10px] flex flex-col items-center justify-start gap-[10px] border-[1px] border-[solid] border-[white] bg-white">
@@ -11,4 +11,4 @@ const notfound = () => {
 	)
 }
 
-export default notfound
+export default Notfound

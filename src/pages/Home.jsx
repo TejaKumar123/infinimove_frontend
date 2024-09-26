@@ -1,10 +1,10 @@
-import Navbar from "../components/major/home/navbar"
-import Services from "../components/major/home/services"
-import About from "../components/major/home/about"
-import Footer from "../components/major/home/footer"
+import Navbar from "../components/major/home/Navbar"
+import Services from "../components/major/home/Services"
+import About from "../components/major/home/About"
+import Footer from "../components/major/home/Footer"
 import { useState } from "react"
 
-const home = () => {
+const Home = () => {
 
 	const [aboutvisibility, setAboutvisibility] = useState(false);
 
@@ -20,4 +20,4 @@ const home = () => {
 	)
 }
 
-export default home
+export default Home
