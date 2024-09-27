@@ -6,7 +6,7 @@ const navbar = ({ setAboutvisibility }) => {
 	const [index, setIndex] = useState(0);
 
 	return (
-		<div className="w-full h-[65px] px-[50px] flex flex-row items-center justify-between bg-[#0b021ca1] fixed z-[5px] backdrop-blur-[10px]">
+		<div className="w-full h-[65px] px-[50px] flex flex-row items-center justify-between bg-[#0b021ca1] fixed z-[5] backdrop-blur-[10px]">
 			<img src={imageasset.logo1} className="h-[55px]" />
 			<div className="w-[500px] h-[50px] flex flex-row items-center justify-between relative text-[white]">
 				<div className="border w-[125px] flex items-center justify-center h-[90%] rounded-[80px] border-[white] absolute z-[-1]"
@@ -18,7 +18,7 @@ const navbar = ({ setAboutvisibility }) => {
 					onClick={() => {
 						setIndex(0);
 						setAboutvisibility(false);
-						document.getElementById("services").scrollIntoView({ behavior: "smooth" });
+						document.getElementById("home").scrollIntoView({ behavior: "smooth" });
 					}}
 				>
 					HOME
