@@ -1,28 +1,19 @@
 import imageasset from "../../../assets/images/imageassets"
-import { useFormik } from "formik"
-import * as Yup from "yup"
-import ErrorAlert from "../../basic/ErrorAlert"
+import { useState } from "react"
+import FeedbackForm from "../../basic/footer/FeedbackForm"
 
 
 const Footer = () => {
 
-	const validationSchema = Yup.object({
-		email: Yup.string().email("invalid email").required("email required"),
-		feedback: Yup.string().required("feedback required")
-	})
+	const [openStatus, setOpenStatus] = useState(false);
 
-	const formik = useFormik({
-		initialValues: {
-			email: "",
-			feedback: ""
-		},
-		validationSchema,
-		onSubmit: (values,) => {
-			alert(JSON.stringify(values));
+	const handleClose = () => {
+		setOpenStatus(false);
+	}
 
-		}
-
-	})
+	const handleOpen = () => {
+		setOpenStatus(true);
+	}
 
 	return (
 		<div id="footer" className="w-[100%] min-h-[450px] border border-[black] bg-footer-linear relative px-[50px] pt-[90px] flex flex-row items-start justify-center">
@@ -41,53 +32,29 @@ const Footer = () => {
 						</div>
 						<p>At InfiniMove, we create seamless software solutions that drive innovation and growth for businesses worldwide.</p>
 					</div>
-					<div className="w-[120px] h-[100%] flex flex-col items-start justify-start gap-[7px]">
+					<div className="w-auto h-[100%] flex flex-col items-start justify-start gap-[7px]">
 						<p className="text-[130%] font-bold mb-[10px]">Company</p>
 						<a href="/">About Us</a>
 						<a href="/">Careers</a>
 						<a href="/" >Terms</a>
 						<a href="/" >Contact Us</a>
 					</div>
-					<div className="w-[150px] h-[100%] flex flex-col items-start justify-start gap-[7px]">
+					<div className="w-auto h-[100%] flex flex-col items-start justify-start gap-[7px]">
 						<p className="text-[130%] font-bold mb-[10px]">Use Cases</p>
-						<a href="/" >Web-designers</a>
-						<a href="/" >Marketers</a>
-						<a href="/" >Small Business</a>
-						<a href="/">Website Builder</a>
+						<a href="/" >UI/UX design</a>
+						<a href="/" >Mobile app building</a>
+						<a href="/" >Website building</a>
+						<a href="/">Digital Marketing</a>
 					</div>
-					<div className="w-[400px] h-[100%] flex flex-col items-center justify-start gap-[10px]">
+					<div className="w-[400px] h-[100%] flex flex-col items-center justify-start gap-[30px]">
 						<p className="text-[130%] font-bold">We Await For Valuable Feedback</p>
-						<form className="w-[100%] h-auto mt-[5px] flex flex-row items-start justify-around flex-wrap gap-[10px]" onSubmit={formik.handleSubmit}>
-							<div className="flex flex-col items-start justify-between gap-[5px]">
-								<input
-									type="text"
-									className="w-[180px] h-[50px] rounded-[5px] focus:outline-none text-[black] text-center px-[10px]"
-									placeholder="Enter your Email"
-									name="email"
-									value={formik.values.email}
-									onChange={formik.handleChange}
-									onBlur={formik.handleBlur}
-								/>
-								{formik.touched.email && formik.errors.email ? <ErrorAlert>{formik.errors.email}</ErrorAlert> : null}
-
-							</div>
-							<div className="flex flex-col items-start justify-between gap-[5px]">
-								<textarea
-									className="w-[180px] min-h-[50px] max-h-[50px] rounded-[5px] focus:outline-none text-[black] text-center px-[10px] py-[12px]"
-									placeholder="Enter your feedback"
-									name="feedback"
-									value={formik.values.feedback}
-									onChange={formik.handleChange}
-									onBlur={formik.handleBlur}
-								></textarea>
-								{formik.touched.feedback && formik.errors.feedback ? <ErrorAlert>{formik.errors.feedback}</ErrorAlert> : null}
-
-							</div>
-							<input
-								type="submit"
-								className="px-[20px] py-[10px] bg-[#6C48F4] rounded-[10px] text-[110%] font-bold"
-							/>
-						</form>
+						<button
+							onClick={handleOpen}
+							className="font-bold text-[white] text-[130%] px-[20px] py-[7px] bg-[#6C48F4] rounded-[10px]"
+						>
+							Send Your Feedback
+						</button>
+						<FeedbackForm open={openStatus} onClose={handleClose} />
 					</div>
 				</div>
 				<div className="w-full min-h-[60px] flex flex-row items-center justify-between px-[15px]">
