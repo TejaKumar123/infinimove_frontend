@@ -5,19 +5,19 @@
 /* josefin sans */
 @font-face {
 	font-family: heading;
-	src: url("fonts/heading.ttf");
+	src: url("public/fonts/heading.ttf");
 }
 
 /* Lato */
 @font-face {
 	font-family: subheading;
-	src: url("fonts/subheading.ttf");
+	src: url("public/fonts/subheading.ttf");
 }
 
 /* Biryani */
 @font-face {
 	font-family: para;
-	src: url("fonts/para.ttf");
+	src: url("public/fonts/para.ttf");
 }
 
 
