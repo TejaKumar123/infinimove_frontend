@@ -22,7 +22,7 @@ const About2 = () => {
 						speed={2000}
 					>
 						<SwiperSlide>
-							<img src={imageasset.Airbnb} alt="Aitbnb" />
+							<img src={imageasset.Airbnb} alt="Airbnb" />
 						</SwiperSlide>
 						<SwiperSlide>
 							<img src={imageasset.Hubspot} alt="Hubspot" />
@@ -40,7 +40,7 @@ const About2 = () => {
 							<img src={imageasset.FedEx} alt="FedEx" />
 						</SwiperSlide>
 						<SwiperSlide>
-							<img src={imageasset.Airbnb} alt="Aitbnb" />
+							<img src={imageasset.Airbnb} alt="Airbnb" />
 						</SwiperSlide>
 						<SwiperSlide>
 							<img src={imageasset.Hubspot} alt="Hubspot" />
