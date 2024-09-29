@@ -19,7 +19,7 @@ const Service2 = () => {
 				</div>
 
 				<div className="w-[100%] min-h-[200px] rounded-[20px] bg-service-border-linear p-[4px]">
-					<ServiceCard src={imageasset.service2} title={"Exsisting Software Extensions"} description={"Modernise your existing software with latest cutting edge technology and new innovative features"} />
+					<ServiceCard src={imageasset.service2} title={"Existing Software Extensions"} description={"Modernise your existing software with latest cutting edge technology and new innovative features"} />
 				</div>
 
 
